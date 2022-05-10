@@ -42,3 +42,12 @@ scrollBtn.addEventListener('click', function() {
   })
 
 });
+
+
+
+// Add Loading Screen 
+setTimeout(function () {
+
+  $("#loading-wrapper").fadeToggle();
+
+}, 3000); 
