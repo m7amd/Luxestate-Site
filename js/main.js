@@ -1,3 +1,10 @@
+// Add Loading Screen 
+setTimeout(function () {
+
+  $("#loading-wrapper").fadeToggle();
+
+}, 3000); 
+
 // make navbar sticky
 window.addEventListener('scroll', function(){
 
@@ -19,7 +26,6 @@ btn.addEventListener('click', function() {
   heroSection.style.paddingTop = "350px";
 
 });
-
 
 // Scroll To Top 
 let scrollBtn = document.querySelector(".scroll-to-top");
@@ -45,9 +51,3 @@ scrollBtn.addEventListener('click', function() {
 
 
 
-// Add Loading Screen 
-setTimeout(function () {
-
-  $("#loading-wrapper").fadeToggle();
-
-}, 3000); 

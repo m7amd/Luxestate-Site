@@ -26,7 +26,8 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@include breakPoints(mobile) {
   .join-us {
     .row {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

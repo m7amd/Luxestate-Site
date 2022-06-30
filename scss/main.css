@@ -14,7 +14,8 @@ header {
     align-items: center; }
     header .container .logo h1 {
       font-size: 40px;
-      letter-spacing: -3px; }
+      letter-spacing: -3px;
+      user-select: none; }
     header .container nav {
       flex: 1;
       display: flex;
@@ -455,7 +456,7 @@ header {
             font-weight: bold; }
           .agents .container .row .card .info .more-info i {
             margin-left: 10px;
-            color: #1f373d; }
+            color: var(--darkBlue); }
 
 @media (max-width: 768px) {
   .agents .container > p {
@@ -549,6 +550,9 @@ footer {
     background-color: #ffcc01;
     color: #1f373d; }
 
+:root {
+  --darkBlue: #1f373d; }
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -611,6 +615,9 @@ a, h1, h2, h3, h4, p, span {
 
 .mr {
   margin-bottom: 200px; }
+
+.open {
+  left: 0; }
 
 #loading-wrapper {
   position: fixed;

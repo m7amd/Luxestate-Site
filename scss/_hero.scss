@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@include breakPoints(small) {
   .hero {
     overflow: hidden;
     height: calc(100vh - 90px);
@@ -74,7 +74,8 @@
   }
 }
 
-@media (max-width: 767px) {
+
+@include breakPoints(mobile){
   .hero {
     position: relative;
     padding-top: 120px;

@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include breakPoints(mobile) {
   .cards {
     overflow-x: hidden;
     .row {

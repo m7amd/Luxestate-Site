@@ -47,7 +47,8 @@
   }
 }
 
-@media (max-width: 768px) {
+
+@include breakPoints(mobile) {
   .stats {
     .row {
       flex-flow: column wrap;

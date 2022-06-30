@@ -5,7 +5,7 @@
     h2 {
       font-size: 35px;
     }
-     > p {
+    > p {
       margin: 15px 0 50px 0;
       width: 40%;
       line-height: 1.8;
@@ -37,9 +37,11 @@
               font-size: 15px;
               font-weight: bold;
             }
-            i {
-              margin-left: 10px;
-              color: $darkBlue
+            div {
+              i {
+                margin-left: 10px;
+                color: $darkBlue;
+              }
             }
           }
         }
@@ -48,7 +50,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include breakPoints(small) {
   .agents {
     .container {
       > p {

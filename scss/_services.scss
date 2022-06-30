@@ -3,7 +3,7 @@
     h2 {
       font-size: 35px;
     }
-     > p {
+    > p {
       margin: 15px 0 50px 0;
       width: 40%;
       line-height: 1.8;
@@ -37,7 +37,8 @@
   } 
 }
 
-@media (max-width: 768px) {
+
+@include breakPoints(mobile) {
   .services {
     .container {
       > p {

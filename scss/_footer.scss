@@ -54,7 +54,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@include breakPoints(mobile) {
   footer {
     .row {
       flex-flow: column wrap !important; 
@@ -64,27 +64,5 @@ footer {
         gap: 20px 41px;
       }
     }
-  }
-}
-
-// Scroll To top Button
-
-.scroll-to-top {
-  z-index: 999;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  background-color: $darkBlue;
-  color: $white;
-  transition: .3s;
-  cursor: pointer;
-  display: none;
-  &:hover {
-    background-color: $yellow;
-    color: $darkBlue;
   }
 }
